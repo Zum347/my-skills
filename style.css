@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px 1rem;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    display: block;
+    width: 10%;
+    height: 3px;
+    background-color: aqua;
+    margin: 10px auto 0;
+}
+
+.skill-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem 2rem;
+    justify-content: center;
+    background-color: #444;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.skill-box:hover {
+    transform: scale(1.05);
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.skill-title::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 4px;
+    background-color: #2ecc2e;
+    border-radius: 2px;
+}
+
+.skill-title img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.skill-title h1 {
+    margin: 0.5rem 0;
+    color: #fff;
+}
+
+.skill-title p {
+    color: #ddd;
+    line-height: 1.5;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.skill-icon {
+    width: 50px;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr; /* 1 sütun */
+        padding: 1rem;
+    }
+}
