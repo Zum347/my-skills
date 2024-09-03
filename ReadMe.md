@@ -9,4 +9,4 @@
 -**Modern Tasarım:** Basit ve temiz bir kullanıcı arayüzü sunar
 -**Hover Efekti:** Yetenek kutularının üzerine gelindiğinde hafif bir büyütme efekti uygulanır.
 
-![Example Image](image/ssimg.com)
+![Example Image](image/ssimg.png)
